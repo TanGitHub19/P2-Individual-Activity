@@ -2,7 +2,7 @@ require("dotenv").config();
 const express = require("express");
 const mongoose = require("mongoose");
 const app = express();
-const studentRouter = require("./routers/student.route");
+const studentRouter = require("./routers/student.route.js");
 
 app.use(express.json());
 app.use("/api/student", studentRouter);

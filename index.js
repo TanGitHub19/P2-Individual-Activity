@@ -23,4 +23,3 @@ mongoose
     console.log(`Connection Failed!, ${err}`);
   });
 
-  module.exports = app;

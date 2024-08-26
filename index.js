@@ -20,5 +20,5 @@ mongoose
     });
   })
   .catch((err) => {
-    console.log("Connection Failed!, err");
+    console.log(`Connection Failed!, ${err}`);
   });

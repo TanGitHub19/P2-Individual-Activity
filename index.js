@@ -11,6 +11,10 @@ app.get("/", (req, res) => {
   console.log("Hello World");
 });
 
+app.get("/", (req, res) => {
+  res.redirect("/api/v1/student");
+});
+
 mongoose
   .connect(process.env.MONGO_URL)
   .then(() => {
@@ -22,4 +26,3 @@ mongoose
   .catch((err) => {
     console.log(`Connection Failed!, ${err}`);
   });
-
